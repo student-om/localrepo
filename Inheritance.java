@@ -1,3 +1,4 @@
+//eh
 class Super{
 	private int a;
 	protected static int b;
