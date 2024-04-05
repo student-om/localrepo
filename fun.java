@@ -1,3 +1,4 @@
+//exception handling
 interface Voter{
 	void castVote();
 }
