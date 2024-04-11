@@ -1,3 +1,4 @@
+//Day3
 abstract class Myclass{
 abstract void calculate(double x);
 }
