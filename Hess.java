@@ -1,5 +1,6 @@
 //import java.util.scanner;
 
+//Day 4
 interface mess{
 
 void rate();
