@@ -1,4 +1,5 @@
- import java.lang.Math;
+//Day 5
+import java.lang.Math;
  class Calculator{
 
 	public static long addition(long a , long b){
