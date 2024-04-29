@@ -1,4 +1,4 @@
-//created package named same (A.class will go there)
+//created package named same (A.class will go there).
 
 package same;
 public class A{
