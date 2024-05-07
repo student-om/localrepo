@@ -18,9 +18,6 @@ public void casteVote(){
 }
 
 public void checkValidityOfVoter(int age){
-	try{
-		if(age < minAge){
-		throw new InvalidVoterException("Minimumm age is 18");
 		}
 		else if(age>=150){
 		throw new InvalidVoterException("Not a Human");
@@ -29,7 +26,10 @@ public void checkValidityOfVoter(int age){
 	catch(Exception ex){
 	System.out.println(ex);//this prints the message of String parameter you paseed
 	for(StackTraceElement element : ex.getStackTrace()){
-	System.out.println(element);//if we try to print object we invoke toString() method of StrackTraceElement class
+	System.out.println(element);//if we try to print object we
+	try{
+		if(age < minAge){
+		throw new InvalidVoterException("Minimumm age is 18"); invoke toString() method of StrackTraceElement class
 	System.out.println(element.getClassName() + "." + element.getMethodName() + "(" + element.getFileName()  		+":"+element.getLineNumber()+")");//this line can replace the toString() or printing(includes line no in main and this method
 	}
 	}

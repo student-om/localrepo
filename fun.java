@@ -44,8 +44,9 @@ class Election2024{
 		ecIndia.checkVailidityOfVoter(4);
 	}
 }
-
-
+//agar RunTimeException likha to main method ke side mein throws nahi likha to bhi chalega
+//it occurs at Runtime not compile-time
+//Exception is super class of RuntimeException. but main ke baju me throws nahi likha to agar (Exception use kara hota at linne 50) to wo compile time me hi error de deta ki dekho yahan problem hai karke..
 class InvalidVoter extends RuntimeException{
 	InvalidVoter(String error){
 		super(error);

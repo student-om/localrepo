@@ -1,6 +1,6 @@
 //Day3
 abstract class Myclass{
-abstract void calculate(double x);
+ abstract void calculate(double x);
 }
 
 class Sub1 extends Myclass{
@@ -26,9 +26,9 @@ class Sub3 extends Myclass{
 
 class Day3{
 	public static void main(String args[]){
-	Sub1 sub1 = new Sub1(); 
-	Sub1 sub2 = new Sub2();
-	Sub1 sub1 = new Sub1();  
+	Myclass sub1 = new Sub1(); 
+	Myclass sub2 = new Sub2();
+	Myclass sub3 = new Sub3();  
 	
         sub1.calculate(3);
         sub2.calculate(4);

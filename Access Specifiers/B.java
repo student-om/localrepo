@@ -7,9 +7,14 @@ public class B{
 	public static void main(String args[]){
 	A obj = new A();
 	B obj1 = new B();
-	System.out.println(obj.a);
+	//System.out.println(obj.a);
 	System.out.println(obj.b);
 	System.out.println(obj.c);
 	System.out.println(obj.d);
 	}
 }
+
+
+//while running and compiling
+//javac -d . B.java
+//java same/B

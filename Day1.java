@@ -14,7 +14,7 @@ class Day1{
 	catch(ArrayIndexOutOfBoundsException e){   // this is a run time exception
 	System.out.println("wrong index");
 	}
-	//2 ArrayIndexOutOfBoundsException ARE also not allowed
+	//2 times ArrayIndexOutOfBoundsException ARE also not allowed
 	catch(InterruptedException e){  //this is a compile time exception
 	System.out.println("InterruptedException found");
 	}
