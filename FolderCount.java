@@ -46,6 +46,7 @@ class FileClass{
           
         }
         else{
+
         folderCount++;
         countItems(foldername);
       }
