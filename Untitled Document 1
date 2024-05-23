@@ -1,0 +1,19 @@
+class Department{
+	static final String[] faculty = {"Akshay fajge","Balaji Shetty","Ubaid Ahmed","Megha mam","Pakle"}
+	
+	Faculty getFaculty(String fname){
+	Faculty f = new Faculty("Akshay Fajge");
+	
+	return f;
+	}
+
+}
+
+
+class Faculty{
+   String fname;
+	Faculty(String fname){
+	this.fname = fname;
+	}
+
+}
