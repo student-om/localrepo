@@ -1,17 +1,24 @@
 class Department{
-	static final String[] faculty = {"Akshay fajge","Balaji Shetty","Ubaid Ahmed","Megha mam","Pakle"}
+	static final String[] faculty = {"Akshay fajge","Balaji Shetty","Ubaid Ahmed","Megha mam","Pakle"};
 	
 	Faculty getFaculty(String fname){
-	 for(i=0;i<faculty.length;i++){
-	 if(fname.equalsIgnoreCase(arr[i])){
+	 for(int i=0;i<faculty.length;i++){
+	 if(fname.contains(faculty[i].toLowerCase())){
 	  Faculty f = new Faculty("Akshay Fajge");
 	
 	  return f;
 	  }
 	  else{
-	  throw new FacultyNotFoundException;
+	  try{
+	  throw new FacultyNotFoundException("No name Found in Faculty");
+	  }
+	  
+	  catch(FacultyNotFoundException ae){
+	  ae.printStackTrace();
 	  }
 	  }
+	  }
+	  return null;
 	}
 
 }
@@ -24,3 +31,11 @@ class Faculty{
 	}
 
 }
+
+class FacultyNotFoundException extends Exception{
+	FacultyNotFoundException(String s){
+	super(s);
+	}
+
+}
+//void->return;  int->return 0; Faculty->return null
