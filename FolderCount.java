@@ -1,5 +1,5 @@
 import java.io.File;
-
+import javax.swing.JOptionPane;
 class FileClass{
   static int javaFilesCount;
   static int classFIleCount;
@@ -53,5 +53,6 @@ class FileClass{
       }
     }
   }
+  JOptionPane.showMessageDialog(null,Integer.toString(javaFilesCount)+"\n"+Integer.toString(folderCount),"ok",JOptionPane.INFORMATION_MESSAGE);
 }
 }
