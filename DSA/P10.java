@@ -40,3 +40,61 @@ class Solution {
     }
 }
 
+
+//best approach ->
+/*public int majorityElement(int[] nums) {
+    int count = 0;
+    int candidate = 0;
+    
+    for (int num : nums) {
+        if (count == 0) {
+            candidate = num;
+        }
+        
+        if (num == candidate) {
+            count++;
+        } else {
+            count--;
+        }
+    }
+    
+    return candidate;
+}
+
+
+
+
+Given array: {1, 1, 1, 1, 2, 2, 2} for 1st element-> candidate = 1;b/c initially count=0
+ 4 times 1,3 times 2 , for (4) 1's  count is 4 ,for next 2's count = 4-3 = 1 !=0 so candidate value will not changed , still 1 and 1 is returned
+Iteration through the array:
+First element (num = 1):
+
+    Since count is 0, set candidate to 1.
+    Increment count to 1.
+
+Second element (num = 1):
+
+    num equals candidate, so increment count to 2.
+
+Third element (num = 1):
+
+    num equals candidate, so increment count to 3.
+
+Fourth element (num = 1):
+
+    num equals candidate, so increment count to 4.
+    Now, count is equal to the number of times candidate (1) has appeared consecutively.
+
+Fifth element (num = 2):
+
+    num does not equal candidate, so decrement count to 3.
+
+Sixth element (num = 2):
+
+    num does not equal candidate, so decrement count to 2.
+
+Seventh element (num = 2):
+
+    num does not equal candidate, so decrement count to 1.
+*/
+
