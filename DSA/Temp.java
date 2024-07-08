@@ -1,5 +1,5 @@
 import java.util.List;
-
+//leetcode Q2
 class ListNode {
    
       int val;
